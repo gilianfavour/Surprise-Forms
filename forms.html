@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        body{background-color: rgb(254, 222, 222); font-family: Arial, Helvetica, sans-serif;}
+    </style>
+</head>
+<body>
+    <h1>
+    <blockquote>BK RONNIE'S ORDER FORM </blockquote>
+    </h1>
+    <form action="./action_page.php" target="_blank" method="get">
+        <fieldset>
+        <legend>PERSONAL</legend>
+        <h2>
+            PERSONAL DETAILS
+        </h2>
+        <label for="FName">
+            FIRST NAME:
+        </label><br>
+        <input type="text" id="FName" name="FName" value=""><br>
+        <label for="LName">
+        LAST NAME:
+        </label> <br>
+        <input type="text" id="LName" name="LName" value=""><br>
+        <label for="number">
+            TEL NO:
+        </label><br>
+        <input type="tel" id="number" name="number" value=""><br>
+        <label for="E-MAIL">
+            E-MAIL:
+        </label><br>
+        <input type="email" id="E-MAIL" name="E-MAIL" value=""><br>
+        <label for="DOD">
+            DATE OF ORDER
+        </label><br>
+        <input type="date" id="DOD" name="DOD" value=""><br>
+        <br><label for="gender">
+            GENDER
+        </label>
+        <select id="gender" name="gender">
+            <option value="Female"> Female</option>
+            <option value="Male"> Male</option>
+        </select><br>
+        </fieldset><br>
+        <br> <fieldset>
+            <legend>DELIVERY</legend>
+        <h2>
+            DELIVERY/PICK-UP
+        </h2>
+        <label for="delivery">
+            DELIVERY
+        </label>
+        <input type="radio" id="delivery" name="delivery" value="delivery"><br>
+        <label for="pick-up">
+            PICK-UP
+        </label>
+        <input type="radio" id="delivery" name="delivery" value="pick-up"><br>
+        <br><label for=" location">
+            CHOOSE LOCATION
+        </label>
+        <br><select id="location" name="location">
+            <option value="Eastern"> Eastern region</option>
+            <option value="Northern"> Northern region</option>
+            <option value="Central"> Central region</option>
+            <option value="Western"> Western region</option>
+        </select><br>
+        <br><label for="address">
+            ADDRESS
+        </label><br>
+        <input type="text" id="adress" name="address" value=""><br>
+        </fieldset><br>
+        <br><fieldset>
+            <legend>CATEGORY</legend>
+        <h2>
+            CATEGORY
+        </h2>
+        <label for ="category1">
+            LADIES:
+        </label>
+        <input type="checkbox" id="category1" value="dresses"><br>
+        <label for="catergory2">
+            GENTS:
+        </label>
+        <input type="checkbox" id="category2" value="TROUSERS"><br>
+        <label for="category3">
+            CHILDREN:
+        </label>
+        <input type="checkbox" id="category3" value="SWEAT SHIRTS">
+        </fieldset><br>
+        <br><fieldset>
+            <legend>SIZE</legend>
+        <h2>
+            SIZE
+        </h2>
+        <label for="size">
+            0-5 years:
+        </label>
+        <input type="checkbox" id="size" name="size" value="SIZE"><br>
+        <label for="size"></label>
+            6-10 years:
+        </label>
+        <input type="checkbox" id="size" name="size" value="SIZE"><br>
+        <label for="size">
+            11-18 years:
+        </label>
+        <input type="checkbox" id="size" name="size" value="SIZE"><br>
+        <label for="size"></label>
+            19-32 years:
+        </label>
+        <input type="checkbox" id="size" name="size" value="SIZE"><br>
+        <label for="size">
+            33-45 years:
+        </label>
+        <input type="checkbox" id="size" name="size" value="SIZE"><br><label for="size"></label>
+            46 and above years:
+        </label>
+        <input type="checkbox" id="size" name="size" value="SIZE"><br>
+        </fieldset><br>
+       <br> <textarea form="description" rows="10" cols="50">
+            DESCRIPTION OF PARTICULARS
+        </textarea>
+        <button type="button" onclick="alert('submitted!') ">
+            click to submit
+        </button><br>
+        <br><input type="submit" value="SUBMIT">
+        <input type="reset" value="RESET">
+    </form>
+</body>
+</html>
